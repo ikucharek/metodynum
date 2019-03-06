@@ -43,7 +43,7 @@ def lowv(m):
         bb=bb+1
         if m[j]>b:
             b=m[j]
-            return b, bb      
+            return b, "index", bb      
 lowv(s)
 
 
