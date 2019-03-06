@@ -5,11 +5,11 @@ from cs50 import get_int
 
 # TASKS (8p)- calculate & print:
 #0 Use alternative way of reading inputs - using library (0.5p)
-#1 Perimeter & field of circles with given radius X for the first circle & Y for the second one. (1p)
 
+
+#1 Perimeter & field of circles with given radius X for the first circle & Y for the second one. (1p)
 k = 5
 y = 2
-
 def poleobw(x1,x2):
     p1=pi*x1**2
     p2=pi*x2**2
@@ -19,7 +19,23 @@ def poleobw(x1,x2):
 poleobw(y,k)
 
 
+
+
+
+
 #2 Find X & Y that satisfy: X is divisible by Y and both X & Y are even. (0.5p)
+x=arange(2,100)
+y=arange(2,100)
+print(x)
+
+for i in range(0,len(x)):
+    for j in range(1,len(x)):   
+        if x[i] % y[j] == 0 and x[i] % 2 == 0 and y[j] % 2 ==0 and x[i]!=y[j]:
+            print(y[j],x[i])
+            
+            
+            
+            
 
 #3 Check if X is divisible by Y (do it in one line of code), print 'X is divisible by Y' or 'X is not divisible by Y'. (1p)
 x=4
