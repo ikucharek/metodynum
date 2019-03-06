@@ -40,6 +40,7 @@ factorial(o)
 #3 write a function which takes an array of numbers as an input and finds the lowest value. Return the index of that element and its value (1p)
 
 s=randn(10)
+#albo x=array(x), z listy na tablce
 print(s)
 
 def lowv(m):
