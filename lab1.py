@@ -63,7 +63,7 @@ n=input("Please give the length of plot ")
 n=int(n)+1
 ll=zeros(n)
 for v in range(0, n):
-    ll[v] = pi ** v + v * 2 - 9
+    ll[v] = v**2 - sin(v/9)
 plot(ll)
 show()
 #the length of a chart is the input to your script. The output is a plot (it doesn't matter if it's a y=x or y=e^x+2x or y=|x| function, use your imagination)
