@@ -40,9 +40,7 @@ factorial(o)
 #3 write a function which takes an array of numbers as an input and finds the lowest value. Return the index of that element and its value (1p)
 
 s=randn(10)
-#albo x=array(x), z listy na tablce
 print(s)
-
 def lowv(m):
     b=0
     bb=0
@@ -50,7 +48,7 @@ def lowv(m):
         bb=bb+1
         if m[j]>b:
             b=m[j]
-            return b, "index", bb      
+    print(b, "index", bb)      
 lowv(s)
 
 
