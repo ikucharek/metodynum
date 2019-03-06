@@ -15,7 +15,7 @@ def poleobw(x1,x2):
     p2=pi*x2**2
     o1=2*pi*x1
     o2=2*pi*x2
-    return 'pole 1 =', p1, 'pole 2 =' ,p2, 'obw1 =', o1, 'obw2 = ',o2
+    print('pole 1 =', p1, 'pole 2 =' ,p2, 'obw1 =', o1, 'obw2 = ',o2)
 poleobw(y,k)
 
 
