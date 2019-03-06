@@ -38,10 +38,12 @@ print(s)
 
 def lowv(m):
     b=0
+    bb=0
     for j in range(0, len(m)):
+        bb=bb+1
         if m[j]>b:
             b=m[j]
-            return b      
+            return b, bb      
 lowv(s)
 
 
