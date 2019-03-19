@@ -16,13 +16,15 @@ l = 2
 
 
 def poleobw(x, y):
-    p1 = pi * x ** 2
-    p2 = pi * y ** 2
-    o1 = 2 * pi * x
-    o2 = 2 * pi * y
-    print('pole 1 =', p1, 'pole 2 =', p2, 'obw1 =', o1, 'obw2 = ', o2)
-
-
+    try:
+        p1 = pi * x ** 2
+        p2 = pi * y ** 2
+        o1 = 2 * pi * x
+        o2 = 2 * pi * y
+        print('pole 1 =', p1, 'pole 2 =', p2, 'obw1 =', o1, 'obw2 = ', o2)
+    except:
+        print(Give a numbers!!!)
+        
 poleobw(l, k)
 
 # 2 Find X & Y that satisfy: X is divisible by Y and both X & Y are even. (0.5p)
@@ -37,17 +39,26 @@ for i in range(0, len(x)):
 # 3 Check if X is divisible by Y (do it in one line of code), print 'X is divisible by Y' or 'X is not divisible by Y'. (1p)
 x = 4
 y = 2
-xIsEven = x % y == 0
-xIsEvenLog = 'X is divisible by Y' if xIsEven else 'X is not divisible by Y'
-print(xIsEvenLog)
-
+try:
+    xIsEven = x % y == 0
+    xIsEvenLog = 'X is divisible by Y' if xIsEven else 'X is not divisible by Y'
+    print(xIsEvenLog)
+except:
+    print(Give a number!!!)
+    
+    
 # 4 Add rounding for the above x/y operation. Round to 2 decimal points. Hint: look up in Google "python limiting number of decimals". (1p)
 
-x = 33
-y = 8
-c = x / y
-c = round(c, 2)
-print(c)
+x=0
+y=8
+try:
+    y=float(y)
+    x=float(x)
+    c=x/y
+    c=round(c,2)
+    print(c)
+except:
+    print("Give a number!!! ")
 
 # 5 Look at lab2-plot.py and create your own script which takes a number as an input and plots the same 3D wave but with different characteristics
 # it's totally up to your imagination how do you want to amend the figure according to the input number (1p)
