@@ -17,15 +17,18 @@ l = 2
 
 def poleobw(x, y):
     try:
-        p1 = pi * x ** 2
-        p2 = pi * y ** 2
-        o1 = 2 * pi * x
-        o2 = 2 * pi * y
-        print('pole 1 =', p1, 'pole 2 =', p2, 'obw1 =', o1, 'obw2 = ', o2)
+        if x and y >0:
+            p1 = pi * x ** 2
+            p2 = pi * y ** 2
+            o1 = 2 * pi * x
+            o2 = 2 * pi * y
+            print('pole 1 =', p1, 'pole 2 =', p2, 'obw1 =', o1, 'obw2 = ', o2)
+        else:
+            print("Number must be >0")
     except:
         print("Give numbers!!!")
-        
 poleobw(l, k)
+        
 
 # 2 Find X & Y that satisfy: X is divisible by Y and both X & Y are even. (0.5p)
 x = arange(2, 50)
