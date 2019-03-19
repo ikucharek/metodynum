@@ -23,7 +23,7 @@ def poleobw(x, y):
         o2 = 2 * pi * y
         print('pole 1 =', p1, 'pole 2 =', p2, 'obw1 =', o1, 'obw2 = ', o2)
     except:
-        print(Give a numbers!!!)
+        print("Give numbers!!!")
         
 poleobw(l, k)
 
@@ -44,7 +44,7 @@ try:
     xIsEvenLog = 'X is divisible by Y' if xIsEven else 'X is not divisible by Y'
     print(xIsEvenLog)
 except:
-    print(Give a number!!!)
+    print("Give a number!!!")
     
     
 # 4 Add rounding for the above x/y operation. Round to 2 decimal points. Hint: look up in Google "python limiting number of decimals". (1p)
