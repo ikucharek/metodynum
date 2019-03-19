@@ -26,13 +26,13 @@ def poleobw(x, y):
 poleobw(l, k)
 
 # 2 Find X & Y that satisfy: X is divisible by Y and both X & Y are even. (0.5p)
-xx = arange(2, 50)
-yy = arange(2, 50)
+x = arange(2, 50)
+y = arange(2, 50)
 
-for i in range(0, len(xx)):
-    for j in range(1, len(xx)):
-        if xx[i] % yy[j] == 0 and xx[i] % 2 == 0 and yy[j] % 2 == 0 and xx[i] != yy[j]:
-            print(yy[j], xx[i])
+for i in range(0, len(x)):
+    for j in range(1, len(x)):
+        if x[i] % y[j] == 0 and x[i] % 2 == 0 and y[j] % 2 == 0 and x[i] != y[j]:
+            print(y[j], x[i])
 
 # 3 Check if X is divisible by Y (do it in one line of code), print 'X is divisible by Y' or 'X is not divisible by Y'. (1p)
 x = 4
